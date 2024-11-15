@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8">
+    <title> </title>
+    <link rel="stylesheet" href="surveystyles.css" />  
+  </head> 
+  <body> 
+    <h1 id="title">Political Participation Survey</h1>
+    <p id="description">Thank you for taking your time to fill out a quick survey about your political participation in the  election.</p>
+    <form id="survey-form" method="post"> 
+
+      <fieldset>    
+          <legend>Personal Information</legend>
+            <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter name" required/></label>
+            <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter email" required/></label>
+            <label for="number" id="number-label">Age (optional): <input id="number" type="number" name="number" min="18" max="120" placeholder="Age"/> </label>
+      </fieldset>
+
+      <fieldset>
+          <legend>Political Affiliation </legend>
+            <label for="moderate"><input id="moderate" type="radio" name="political-affiliation" class="inline" value="1" checked />Moderate</label>
+            <label for="democrat"><input id="democrat" type="radio" name="political-affiliation" class="inline" value="2"/>Democrat</label>
+            <label for="republican"><input id="republican" type="radio" name="political-affiliation" class="inline" value="3"/>Republican</label>
+      </fieldset>
+
+      <fieldset>
+          <legend>Candidate Voted For</legend>
+            <label for="candidate">Who did you vote for?
+              <select id="dropdown" name="dropdown">
+                <option value="">Select one</option>
+                <option value="1">Harris & Walz</option>
+                <option value="2">Trump & Vance</option>
+                <option value="3">Stein & Ware</option>
+                <option value="4">Oliver & ter Maat</option>
+                <option value="5">Other</option>
+              </select>
+            </label>
+
+          <label for="decision">What influenced your decision?</label>
+            <label> 
+              <input id="economy" type="checkbox" name="influence" value="1" checked>Economic Policy
+            </label>
+            <label> 
+              <input id="healthcare" type="checkbox" name="influence" value="2">Healthcare Policy
+            </label>
+            <label> 
+              <input id="foreignpolicy" type="checkbox" name="influence" value="3"> Foreign Policy
+            </label>
+            <label> 
+              <input id="environment" type="checkbox" name="influence" value="4"> Environmental Policy
+            </label>
+            <label>
+              <input id="socialequality" type="checkbox" name="influence" value="5"> Social Justice Policy
+            </label>
+          
+          
+          <label for="explanation">If you would like to provide an explanation or more insight into your decision: 
+          </label>
+          <textarea id="explanation" name="explanation" rows="3" cols="30"></textarea> 
+
+      </fieldset>
+
+
+      <input id= "submit" type="submit" value="Submit" />
+
+   
+    </form>
+  </body>
+</html>
